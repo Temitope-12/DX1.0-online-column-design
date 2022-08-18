@@ -1,0 +1,15 @@
+@media screen and(max-width: 1120px){
+    .faq__parallax{
+        flex-direction: column;
+    }
+
+} 
+
+footer{
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+.footer-icon__holder{
+    margin: 20px 0;
+}

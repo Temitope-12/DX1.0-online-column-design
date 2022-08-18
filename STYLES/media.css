@@ -13,3 +13,6 @@ footer{
 .footer-icon__holder{
     margin: 20px 0;
 }
+.faqs_item{
+    min-width: 100px;
+}

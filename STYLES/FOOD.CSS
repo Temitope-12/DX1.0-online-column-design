@@ -272,6 +272,7 @@ span a{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .foodcard_item{
     width: 320px;

@@ -1,4 +1,37 @@
 @media screen and(max-width: 1120px){
+    .nav-mobile{
+        display: flex;
+    }
+    .header-banner{
+        padding-top: 50px;
+    }
+    .heeader-banner-content{
+        width: 100%;
+    }
+    .nav-desktop{
+        display:none;
+    }
+    
+
+    .about-us_card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us_text-contentholder,
+.about-us_imageholder{
+    min-width: 350px;
+    margin: 20px 0;
+
+}
+.foodcard_item{
+    margin: 20px 0;
+
+}
+.faqs_item{
+    min-width: 100%;
+}
+
     .faq__parallax{
         flex-direction: column;
     }
@@ -13,6 +46,8 @@ footer{
 .footer-icon__holder{
     margin: 20px 0;
 }
-.faqs_item{
-    min-width: 100px;
-}
+
+
+
+
+

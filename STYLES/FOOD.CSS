@@ -53,6 +53,109 @@ span a{
     margin-left: 10px;
 }
 /* reuseable ends here */
+.backdrop{
+    background: var(--light-text-color);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.nav-mobile{
+    display: none;
+    background: var(--main-color);
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+.nav-mobile_brand{
+    display: flex;
+    align-items:center ;
+}
+.nav-mobile_brand span{
+    color: var(--white-color);
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.mobile-nav_logo-holder{
+    padding: 5px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 25px;
+}
+.hamburger-menu{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.menubars{
+    height: 3px;
+    background: var(--white-color);
+    width: 100%;
+    position: relative;
+}
+.menubars::before{
+    transform: (-10px);
+}
+.menubars::after{
+    transform: (10px);
+}
+.show .menubars{
+    background: transparent;
+}
+.show .menubars::before{
+    transform: rotate(45deg);
+    background: var(--main-color);
+
+}
+.show .menubars::after{
+    transform: rotate(-45deg);
+    background: var(--main-color);
+}
+    .mobile_link-holder{
+        display: none;
+        width: 50%;
+        height: 100vh;
+        position:fixed;
+        background: var(--main-color);
+        right: 0;
+        top: 0;
+    }
+    .showlinks{
+        display: block;
+    }
+    .mobile_link-holder button{
+        border: 2px solid var(--white-color);
+        background: transparent;
+        color: var(--white-color);
+        margin-left: 15px;
+    }
+    .mobile_link-holder li{
+        list-style: none;
+    }
+    .mobile_header-links{
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: var(--white-color);
+    }
+    .mobile_header-links:hover,
+    .mobile_header-links:focus{
+        background: var(--white-color);
+        color: var(--main-color);
+    }
+    .active-link{
+        background: var(--white-color);
+        color: var(--main-color);
+        
+    
+    }
     
     .nav-desktop{
         position: fixed;
@@ -118,13 +221,13 @@ span a{
         /* border: 3px solid blue; */
         width: 50%;
     }
-    .header-banner_content h1{
+    .header-banner-content h1{
         color: var(--main-color-dark);
         font-size: 45px;
         line-height: 1.1;
         font-weight: 300;
     }
-    .header-banner_content p{
+    .header-banner-content p{
         margin: 20px 0;
         color: var(--text-color);
         line-height: 1.6;
@@ -132,13 +235,7 @@ span a{
     .header-banner-content button{
         margin-right: 10px;
     }
-    .btn-light{
-        border:2px solid var(--main-color);
-        background: transparent;
-    }
-    .btn-light:hover{
-        color: var(--main-color);
-    }
+    
 .header_counter{
     display: flex;
     background: var(--main-color);
@@ -173,15 +270,15 @@ span a{
     overflow: hidden;
 }
 .about-us_card-imageholder img{
-    height: auto;
-    width: 100%;
-    /* another way to do it;
+    /* height: auto;
+    width: 100%; */
+    /* another way to do it; */
     height: 100%;
     width: 100%;
-    object-fit: contain; */
+    object-fit: cover; 
 }
 .about-us_text-contentholder{
-    height: 350px;
+    /* height: 350px; */
     width: 48%;
     /* border: 3px solid blue; */
 }

@@ -1,4 +1,8 @@
-@media screen and(max-width: 1120px){
+@media screen and (max-width: 851px){
+   
+    .nav-desktop{
+        display: none;
+    }
     .nav-mobile{
         display: flex;
     }
@@ -8,45 +12,43 @@
     .heeader-banner-content{
         width: 100%;
     }
-    .nav-desktop{
-        display:none;
-    }
     
+    .about-us{
+        padding: 30px 10px;
+    }
+        .about-us_card-container{
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .about-us_card-container{
-        flex-direction: column;
-        align-items: center;
+        .about-us_text-contentholder,
+    .about-us_card-holder{
+        min-width: 350px;
+        margin: 20px 0;
+
+    }
+    .foodcard_item{
+        margin: 20px 0;
+
+    }
+    .faqs_item{
+        min-width: 100%;
     }
 
-    .about-us_text-contentholder,
-.about-us_imageholder{
-    min-width: 350px;
-    margin: 20px 0;
+        .faq_parallax{
+            flex-direction: column;
+        }
 
-}
-.foodcard_item{
-    margin: 20px 0;
 
-}
-.faqs_item{
-    min-width: 100%;
-}
-
-    .faq__parallax{
+    footer{
         flex-direction: column;
+        padding: 20px;
+        text-align: center;
     }
-
-} 
-
-footer{
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
+    .footer-icon_holder{
+        margin: 20px 0;
+    }
 }
-.footer-icon__holder{
-    margin: 20px 0;
-}
-
 
 
 

@@ -100,11 +100,19 @@ span a{
     width: 100%;
     position: relative;
 }
+.menubars::before,
+.menubars::after{
+    content: '';
+    background: var(--white-color);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+}
 .menubars::before{
-    transform: (-10px);
+    transform: translateY(-10px);
 }
 .menubars::after{
-    transform: (10px);
+    transform: translateY(10px);
 }
 .show .menubars{
     background: transparent;
@@ -139,14 +147,14 @@ span a{
     .mobile_link-holder li{
         list-style: none;
     }
-    .mobile_header-links{
+    .mobile-header-links{
         display: block;
         padding: 15px;
         text-decoration: none;
         color: var(--white-color);
     }
-    .mobile_header-links:hover,
-    .mobile_header-links:focus{
+    .mobile-header-links:hover,
+    .mobile-header-links:focus{
         background: var(--white-color);
         color: var(--main-color);
     }
@@ -185,6 +193,7 @@ span a{
     }
     .link-holder ul{
         display: flex;
+        width: 500px;
         /* border: 3px solid black;
         width: 500px; */
     }
@@ -344,8 +353,9 @@ span a{
     border: 2px solid var(--white-color);
     display: flex;
     justify-content: center;
+    align-items: center;
     /* short cut */
-    animation: ripple 2s infinite;
+    animation: ripple 1s infinite;
     /* long cut */
     /* animation-name:ripple; */
     /* animation-direction: 2s;
@@ -363,13 +373,14 @@ span a{
     color: var(--main-color);
 }
 .explore-food h2+p{
-    margin: 20px;
+    margin: 20px 0;
 }
 .foodcard-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 .foodcard_item{
     width: 320px;
@@ -413,34 +424,34 @@ height: 100%;
     text-align: center;
 }
 
-.faqs__container {
+.faqs_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px 0;
 }
 
-.faqs__item {
+.faqs_item {
     max-width: 45%;
 }
 
-.faqs__item h3 {
+.faqs_item h3 {
     text-align: left;
     color: var(--main-color-dark);
     margin: 20px 0;
     font-weight: bolder;
 }
 
-.faqs__item span {
+.faqs_item span {
     color: var(--main-color);
     margin: 0 10px 0 0;
 }
 
-.faqs__item p {
+.faqs_item p {
     text-align: justify;
 }
 
-.faq__parallax {
+.faq_parallax {
     /* border: 3px solid tomato; */
     height: 200px;
     background: url('../IMAGES/cta.jpg');
@@ -453,7 +464,7 @@ height: 100%;
     align-items: center;
 }
 
-.faq__parallax h2 {
+.faq_parallax h2 {
     color: var(--white-color);
     font-size: 30px;
     font-weight: bold;
@@ -478,7 +489,7 @@ height: 100%;
     margin: 20px 0;
 }
 
-.cta__input-holder {
+.cta_input-holder {
     display: flex;
     justify-content: center;
 }
